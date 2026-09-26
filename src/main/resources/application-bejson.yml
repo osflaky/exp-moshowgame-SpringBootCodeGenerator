@@ -1,0 +1,64 @@
+server:
+  port: 1234
+  http2:
+    enabled: true
+  servlet:
+      context-path: /generator
+#tomcat:
+#    remote-ip-header: x-forward-for
+#    uri-encoding: UTF-8
+#    max-threads: 10
+#    background-processor-delay: 30
+#    basedir: ${user.home}/tomcat/
+undertow:
+    # 设置IO线程数, 它主要执行非阻塞的任务,它们会负责多个连接, 默认设置每个CPU核心一个线程
+    # 不要设置过大，如果过大，启动项目会报错：打开文件数过多
+    io-threads: 4
+    # 阻塞任务线程池, 当执行类似servlet请求阻塞IO操作, undertow会从这个线程池中取得线程
+    # 它的值设置取决于系统线程执行任务的阻塞系数，默认值是IO线程数*8
+    worker-threads: 64
+    # 以下的配置会影响buffer,这些buffer会用于服务器连接的IO操作,有点类似netty的池化内存管理
+    # 每块buffer的空间大小,越小的空间被利用越充分，不要设置太大，以免影响其他应用，合适即可
+    buffer-size: 1024
+    # 是否分配的直接内存(NIO直接分配的堆外内存)
+    direct-buffers: true
+spring:
+    banner:
+      charset: UTF-8
+    web:
+      encoding:
+        force: true
+        charset: UTF-8
+    application:
+        name: spring-boot-code-generator
+    freemarker:
+        request-context-attribute: request
+        suffix: .html
+        content-type: text/html
+        enabled: true
+        cache: false
+        charset: UTF-8
+        allow-request-override: false
+        expose-request-attributes: true
+        expose-session-attributes: true
+        expose-spring-macro-helpers: true
+        settings:
+          number_format: 0.##
+          default_encoding: UTF-8
+          #template_loader: /templates/
+    #mvc:
+    #  static-path-pattern: /statics/**
+OEM:
+  version: 2025 September
+  header: SQL转Java JPA、MYBATIS实现类代码生成平台
+  keywords: sql转实体类,sql转DAO,SQL转service,SQL转JPA实现,SQL转MYBATIS实现
+  title: JAVA在线代码生成
+  slogan: 👐 Free your hands from boring CRUD—let the code write itself! ⚡
+  description: <p>💻 SpringBootCodeGenerator，又名 `大狼狗代码生成器`🐺🐶，支持 SQL 一键转 JAVA/JPA/Mybatis/MybatisPlus 等多种模板，轻松搞定 CRUD，彻底解放双手 ✋！只需提供 DDL、SELECT SQL 或简单 JSON 👉 即可生成 生成JPA/JdbcTemplate/Mybatis/MybatisPlus/BeetlSQL/CommonMapper 等代码模板。</p><p>🔥🔥🔥 全新 JSqlParser 引擎上线，强力支持 DDL CREATE SQL与 SELECT SQL 解析！欢迎体验 & 反馈 💬！</p><p>👨‍💻 面向开发者的高效利器，已服务数万工程师，欢迎 Star ⭐、Fork 🍴、提 Issue 💬，一起打造更强大的代码生成平台！</p>
+  author: BEJSON.com
+  packageName: www.bejson.com
+  copyright: ✨ Powered by <a href="https://zhengkai.blog.csdn.net" target="_blank">Moshow郑锴</a>➕<a href="https://www.bejson.com/">BeJSON</a> — may the holy light guide your code, your coffee, and your commits! ⚡🧙‍♂️💻
+  returnUtilSuccess: ResponseUtil.success
+  returnUtilFailure: ResponseUtil.error
+  outputStr: www.bejson.com
+  mode: CDN

@@ -1,0 +1,361 @@
+[{
+  "group": "ui",
+  "tier": "main",
+  "templates": [{
+    "id": "10",
+      "name": "swagger-ui",
+      "description": "swagger-ui",
+      "fileName": "swagger-ui.java"
+  },
+    {
+      "id": "11",
+      "name": "element-ui",
+      "description": "element-ui",
+      "fileName": "${className}-element-ui.html"
+    },
+    {
+      "id": "12",
+      "name": "bootstrap-ui",
+      "description": "bootstrap-ui",
+      "fileName": "${className}-bootstrap-ui.html"
+    },
+    {
+      "id": "13",
+      "name": "layui-edit",
+      "description": "layui-edit",
+      "fileName": "${className}-layui-edit.html"
+    },
+    {
+      "id": "14",
+      "name": "layui-list",
+      "description": "layui-list",
+      "fileName": "${className}-layui-list.html"
+    }
+  ]
+},
+  {
+    "group": "mybatis",
+    "tier": "main",
+    "templates": [{
+      "id": "20",
+      "name": "controller",
+      "description": "controller",
+      "fileName": "${className}Controller.java"
+    },
+      {
+        "id": "21",
+        "name": "service",
+        "description": "service",
+        "fileName": "${className}Service.java"
+      },
+      {
+        "id": "22",
+        "name": "service_impl",
+        "description": "service_impl",
+        "fileName": "${className}ServiceImpl.java"
+      },
+      {
+        "id": "23",
+        "name": "mapper",
+        "description": "mapper",
+        "fileName": "${className}Mapper.java"
+      },
+      {
+        "id": "24",
+        "name": "mybatis",
+        "description": "mybatis",
+        "fileName": "${className}Mapper.xml"
+      },
+      {
+        "id": "25",
+        "name": "model",
+        "description": "model",
+        "fileName": "${className}.java"
+      },
+      {
+        "id": "26",
+        "name": "mapper2",
+        "description": "mapper annotation",
+        "fileName": "${className}Mapper2.java"
+      }
+    ]
+  },
+  {
+    "group": "jpa",
+    "tier": "main",
+    "templates": [{
+      "id": "30",
+      "name": "entity",
+      "description": "entity",
+      "fileName": "${className}.java"
+    },
+      {
+        "id": "31",
+        "name": "repository",
+        "description": "repository",
+        "fileName": "${className}Repository.java"
+      },
+      {
+        "id": "32",
+        "name": "jpacontroller",
+        "description": "jpacontroller",
+        "fileName": "${className}Controller.java"
+      }
+    ]
+  },
+
+  {
+    "group": "jdbc-template",
+    "tier": "main",
+    "templates": [{
+      "id": "40",
+      "name": "jtdao",
+      "description": "jtdao",
+      "fileName": "${className}Dao.java"
+    },
+      {
+        "id": "41",
+        "name": "jtdaoimpl",
+        "description": "jtdaoimpl",
+        "fileName": "${className}DaoImpl.java"
+      }
+    ]
+  },
+
+  {
+    "group": "beetlsql",
+    "tier": "legacy",
+    "templates": [{
+      "id": "50",
+      "name": "beetlmd",
+      "description": "beetlmd",
+      "fileName": "${className}.md"
+    },
+      {
+        "id": "51",
+        "name": "beetlentity",
+        "description": "beetlentity",
+        "fileName": "${className}.java"
+      },
+      {
+        "id": "52",
+        "name": "beetlcontroller",
+        "description": "beetlcontroller",
+        "fileName": "${className}Controller.java"
+      }
+    ]
+  },
+
+  {
+    "group": "mybatis-plus",
+    "tier": "main",
+    "templates": [{
+      "id": "60",
+      "name": "pluscontroller",
+      "description": "pluscontroller",
+      "fileName": "${className}Controller.java"
+    },
+      {
+        "id": "61",
+        "name": "plusservice",
+        "description": "plusservice",
+        "fileName": "${className}Service.java"
+      },
+      {
+        "id": "62",
+        "name": "plusmapper",
+        "description": "plusmapper",
+        "fileName": "${className}Mapper.java"
+      },
+      {
+        "id": "63",
+        "name": "plusentity",
+        "description": "plusentity",
+        "fileName": "${className}.java"
+      }
+    ]
+  },
+
+  {
+    "group": "util",
+    "tier": "main",
+    "templates": [{
+      "id": "70",
+      "name": "beanutil",
+      "description": "beanutil",
+      "fileName": "${className}BeanUtil.java"
+    },
+      {
+        "id": "71",
+        "name": "json",
+        "description": "json",
+        "fileName": "${className}.json"
+      },
+      {
+        "id": "72",
+        "name": "xml",
+        "description": "xml",
+        "fileName": "${className}.xml"
+      },
+      {
+        "id": "73",
+        "name": "sql",
+        "description": "sql",
+        "fileName": "${className}.sql"
+      },
+      {
+        "id": "74",
+        "name": "swagger-yml",
+        "description": "swagger-yml",
+        "fileName": "swagger.yml"
+      }
+    ]
+  },
+
+  {
+    "group": "common-mapper",
+    "tier": "legacy",
+    "templates": [{
+      "id": "81",
+      "name": "tkentity",
+      "description": "tkentity",
+      "fileName": "${className}.java"
+    },
+      {
+        "id": "82",
+        "name": "tkmapper",
+        "description": "tkmapper",
+        "fileName": "${className}Mapper.java"
+      }
+    ]
+  },
+
+  {
+    "group": "renren-fast",
+    "tier": "legacy",
+    "templates": [{
+      "id": "91",
+      "name": "menu-sql",
+      "description": "menu-sql",
+      "fileName": "menu.sql"
+    },
+      {
+        "id": "92",
+        "name": "vue-list",
+        "description": "vue-list",
+        "fileName": "${className}-list.vue"
+      },
+      {
+        "id": "93",
+        "name": "vue-edit",
+        "description": "vue-edit",
+        "fileName": "${className}-edit.vue"
+      },
+      {
+        "id": "94",
+        "name": "rr-controller",
+        "description": "rr-controller",
+        "fileName": "${className}Controller.java"
+      },
+      {
+        "id": "95",
+        "name": "rr-dao",
+        "description": "rr-dao",
+        "fileName": "${className}Dao.java"
+      },
+      {
+        "id": "96",
+        "name": "rr-daoxml",
+        "description": "rr-daoxml",
+        "fileName": "${className}Dao.xml"
+      },
+      {
+        "id": "97",
+        "name": "rr-service",
+        "description": "rr-service",
+        "fileName": "${className}Service.java"
+      },
+      {
+        "id": "98",
+        "name": "rr-entity",
+        "description": "rr-entity",
+        "fileName": "${className}.java"
+      }
+    ]
+  },
+  {
+    "group": "jpa-starp",
+    "tier": "legacy",
+    "templates": [{
+      "id": "101",
+      "name": "starp-entity",
+      "description": "entity",
+      "fileName": "${className}.java"
+    },
+      {
+        "id": "102",
+        "name": "starp-repository",
+        "description": "repository",
+        "fileName": "${className}Repository.java"
+      },
+      {
+        "id": "103",
+        "name": "starp-jpa-controller",
+        "description": "jpacontroller",
+        "fileName": "${className}Controller.java"
+      }
+    ]
+  },
+  {
+    "group": "bi",
+    "tier": "legacy",
+    "templates": [{
+      "id": "201",
+      "name": "qliksense",
+      "description": "qlik sense",
+      "fileName": "qliksense.qvs"
+    }]
+  },
+  {
+    "group": "cloud",
+    "tier": "legacy",
+    "templates": [
+      {
+      "id": "301",
+      "name": "bigquery",
+      "description": "GCP BigQuery",
+      "fileName": "bigquery.sql"
+     },
+      {
+        "id": "302",
+        "name": "dataflowjjs",
+        "description": "GCP Dataflow JJS",
+        "fileName": "dataflow.jjs"
+      }
+    ]
+  },
+  {
+    "group": "tk-mybatis",
+    "tier": "legacy",
+    "templates": [
+      {
+        "id": "401",
+        "name": "tk-entity",
+        "description": "tk-entity",
+        "fileName": "${className}.java"
+      },
+      {
+        "id": "402",
+        "name": "tk-mapper",
+        "description": "tk-mapper",
+        "fileName": "${className}Mapper.java"
+      },
+      {
+        "id": "403",
+        "name": "tk-controller",
+        "description": "tk-controller",
+        "fileName": "${className}Controller.java"
+      }
+    ]
+  }
+]
